@@ -14,7 +14,7 @@ Anything and everything [Docker](https://www.docker.com/)
     * OS: [Ubuntu 16.04](http://releases.ubuntu.com/16.04/)
     * Rundeck Version: [Rundeck 2.11.5-1](https://rundeck.org/news/2018/07/06/rundeck-2.11.5.html)
     * Arguments:
-        - PORT: Use `-e PORT=<port>` to change the listening port(default is 4440) for Rundeck and the container
+        - PORT: Use `-e PORT=<port>` to change the listening port(default is 4440) for Rundeck
         - HOST: Use `-e HOST=<host>` to change the Rundeck URL(default is localhost)
     * Examples:
         - [Compose Build](https://docs.docker.com/compose/reference/build/)
