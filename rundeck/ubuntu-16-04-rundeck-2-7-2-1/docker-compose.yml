@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  rundeck:
+    image: ${USER}/${REPO}:${TAG}
+    build:        
+      context: .
+      dockerfile: ${DOCKERFILE}
+      args:
+        FROM_IMAGE: ${FROM_IMAGE}
+        NAME: ${NAME}
+        VERSION: ${VERSION}
+        MAINTAINER: ${MAINTAINER}
+        RUNDECK_INSTALL_PACKAGE: ${RUNDECK_INSTALL_PACKAGE}
+        RUNDECK_INSTALL_PACKAGE_URL: ${RUNDECK_INSTALL_PACKAGE_URL}
+        HOST: ${HOST}
+        PORT: ${PORT}
+    ports:
+      - ${PORT}:${PORT}
